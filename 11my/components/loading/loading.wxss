@@ -1,0 +1,17 @@
+/* components/loading/loading.wxss */
+.loading{
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width:750rpx;
+    border-top: 1rpx solid rgb(200, 200, 200);
+    z-index: 300;
+    height:100rpx;
+    line-height: 100rpx;
+    text-align: center;
+
+}
+image{
+    width:50rpx;
+    height:50rpx;
+}

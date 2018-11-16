@@ -1,0 +1,43 @@
+/* pages/my/my.wxss */
+.banner{
+    width: 100%;
+    height: 510rpx;
+}
+.my{
+    position: relative;
+    top: -320rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+}
+.image-btn{
+    width:200rpx;
+    height:200rpx;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 500rpx;
+}
+.nav{
+    padding:30rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #eee;
+}
+.nav-like{
+    padding-top: 40rpx;
+    font-size: 40rpx;
+    text-align: center;
+    background-color: #eee;
+}
+.textName text{
+    position: relative;
+    bottom: 300rpx;
+    left: 355rpx;
+}

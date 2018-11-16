@@ -1,0 +1,5 @@
+<view class="nav center">
+    <image src="{{isFirst?noLeft:yesLeft}}" class="radio" bind:tap="onLeft"></image>
+    <text class="title">{{title}}</text>
+    <image src="{{isLatest?noRight:yesRight}}" class="radio" bind:tap="onRight"></image>
+</view>

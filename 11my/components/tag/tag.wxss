@@ -1,0 +1,15 @@
+.container{
+    padding:15px 20px;
+    height: 20rpx;
+    font-size: 20rpx;
+    background: #eee;
+    border-radius:30rpx;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.container text{
+    color: #333;
+}

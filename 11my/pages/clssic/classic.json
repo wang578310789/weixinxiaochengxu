@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+        "v-data":"/components/classic/data/data",
+        "v-like":"/components/classic/like/like",
+        "v-movie":"/components/classic/movie/movie",
+        "v-nav":"/components/classic/nav/nav",
+        "v-sentence":"/components/classic/sentence/sentence",
+        "v-music":"/components/classic/music/music",
+        "v-share":"/components/image-button/button"
+    }
+}

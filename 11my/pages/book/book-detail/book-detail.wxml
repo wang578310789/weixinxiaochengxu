@@ -1,0 +1,56 @@
+<wxs src="../../../utils/filter.wxs" module="tools"></wxs>
+<view class="container">
+    <view class="content">
+        <image src="{{detail.image}}" mode="widthFix" class="image"></image>
+        <text class="title">{{detail.title}}</text>
+        <text class="author">{{detail.author}}</text>
+    </view>
+    <view class="short">
+        <text class="short-title">短评</text>
+        <view class="nav">
+            <block wx:for="{{comments}}" wx:key="{{index}}">
+                <v-tag content="{{item.content}}">
+                    <text slot="after" class="txt">+{{item.nums}}</text>
+                </v-tag>
+            </block>
+        </view>
+    </view>
+    <view class="introduce">
+        <view class="introduce-title">内容介绍</view>
+        <text class="summary" decode="{{true}}">{{tools.format(detail.summary)}}</text>
+    </view>
+    <view class="information">
+        <view class="information-title">书本信息</view>
+        <text>出版社：{{detail.publisher}}</text>
+        <text>出版年：{{detail.pubdate}}</text>
+        <text>页数：{{detail.pages}}</text>
+        <text>定价：{{detail.price}}</text>
+        <text>精装：{{detail.binding}}</text>
+    </view>
+    <view class="comment-input">
+        <view class="input" bind:tap="onTap">
+            <image class="input-short" src="/images/icon/short.png"></image>
+            <text>留下你的短评</text>
+        </view>
+        <v-like like="{{likeStatus.like_status}}" count="{{likeStatus.fav_nums}}"></v-like>
+    </view>
+    <view class="comment-content" wx:if="{{isShow}}">
+        <form bindsubmit="onConfirm">
+            <view class="comment-head">
+                <button form-type="submit" plain="{{true}}" class="btn">确定</button>
+                <text bind:tap="onStop">取消</text>
+            </view>
+            <view class="comments">
+                <block wx:for="{{tools.filter(comments,3)}}" wx:key="{{index}}">
+                    <v-tag content="{{item.content}}" bind:comment="onConfirm">
+                        <text slot="after" class="txt">+{{item.nums}}</text>
+                    </v-tag>
+                </block>
+            </view>
+            <view class="comment-wrap">
+                <input class="text-input" value="{{value}}" name="search" type="text" bind:confirm="onConfirm" placeholder="   请您输入短评最多可输入12个字" />
+            </view>
+        </form>
+    </view>
+</view>
+<view class="model" wx:if="{{isShow}}"></view>

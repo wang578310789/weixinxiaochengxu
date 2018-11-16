@@ -1,0 +1,14 @@
+.content{
+    display: inline-flex;
+    cursor: pointer;
+}
+.content image{
+    margin-top: 10rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+.num{
+    font-size: 26rpx;
+    color: #333;
+    margin-left: 10rpx;
+}

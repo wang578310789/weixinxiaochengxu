@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    height:100rpx;
+    align-items: center;
+    padding-left:20rpx;
+    padding-right:20rpx;
+    justify-content: space-between;
+}
+.nav{
+    position:fixed;
+    bottom: 80rpx;
+    margin-left: 75rpx;
+}
+.share{
+    margin-left: 10rpx;
+    margin-top: 40rpx;
+    width: 40rpx;
+    height: 40rpx;
+}
+.likeshare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

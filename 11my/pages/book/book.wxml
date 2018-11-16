@@ -1,0 +1,14 @@
+<view class="content">
+    <view class="search" bind:tap="onSearch">
+        <icon type="search" size="20"></icon>
+        <text>搜索图书名称</text>
+    </view>
+    <view class="nav">
+        <view class="title">精选</view>
+        <view class="container">
+            <block wx:for="{{books}}" wx:key="index">
+                <v-book book="{{item}}"></v-book>
+            </block>
+        </view>
+    </view>
+</view>

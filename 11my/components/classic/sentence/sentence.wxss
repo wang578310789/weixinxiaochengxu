@@ -1,0 +1,24 @@
+/* components/classic/sentence/sentence.wxss */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.banner{
+    width:100%;
+    height:500rpx;
+}
+.movie{
+    width:60rpx;
+    height:176rpx;
+    position: relative;
+    top:-70rpx;
+    left:40rpx;
+}
+.txt{
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    font-size: 40rpx;
+    color: #333;
+}

@@ -1,0 +1,13 @@
+<view class="header">
+    <v-data index="{{classic.index}}"></v-data>
+    <view class="likeshare">
+        <v-like like="{{like}}" count="{{count}}" bind:like="onLike"></v-like>
+        <v-share openType="share">
+            <image src="../../images/icon/share.png" class="share" slot="image"></image>
+        </v-share>
+    </view>
+</view>
+<v-movie wx:if="{{classic.type==100}}" img="{{classic.image}}" content="{{classic.content}}"></v-movie>
+<v-music wx:if="{{classic.type==200}}" img="{{classic.image}}" content="{{classic.content}}" music="{{classic.url}}" title="{{classic.title}}"></v-music>
+<v-sentence wx:if="{{classic.type==300}}" img="{{classic.image}}" content="{{classic.content}}"></v-sentence>
+<v-nav title="{{classic.title}}" isLatest="{{isLatest}}" isFirst="{{isFirst}}" bind:previous="onPrev" bind:next="onNext" class="nav"></v-nav>

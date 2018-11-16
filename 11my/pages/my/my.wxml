@@ -1,0 +1,18 @@
+<view class="container">
+    <image src="/images/bg.png" class="banner"></image>
+    <image wx:if="{{authorized}}" src="{{userInfo.avatarUrl}}" class="my"></image>
+    <!-- <button type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGetUserInfo">获取用户信息</button> -->
+    <!-- <open-data type="userAvatarUrl" class="my"></open-data> -->
+    <v-button wx:if="{{!authorized}}" openType="getUserInfo" bind:onGet="onGetUserInfo" class="my">
+        <image src="/images/my.png" class="image-btn" slot="image"></image>
+    </v-button>
+    <view class="textName">
+        <text>{{userInfo.nickName}}</text>
+    </view>
+</view>
+<view class="nav-like">喜欢</view>
+<view class="nav">
+    <block wx:for="{{likes}}" wx:key="index">
+        <v-likeItem classic="{{item}}"></v-likeItem>
+    </block>
+</view>

@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/clssic/classic",
+    "pages/book/book",
+    "pages/index/index",
+    "pages/search/search",
+    "pages/my/my",
+    "pages/my-search/my-search",
+    "pages/book/book-detail/book-detail"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/clssic/classic",
+        "text": "流行",
+        "iconPath": "images/icon/yuan.png",
+        "selectedIconPath": "images/icon/yuan-1.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "书单",
+        "iconPath": "images/icon/san.png",
+        "selectedIconPath": "images/icon/san-1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "喜欢",
+        "iconPath": "images/icon/zheng.png",
+        "selectedIconPath": "images/icon/zheng-1.png"
+      }
+    ]
+  }
+}

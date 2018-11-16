@@ -1,0 +1,2 @@
+<image wx:if="{{authorized}}" src="{{userInfo.avatarUrl}}" class="my"></image>
+<button type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGetUserInfo">获取用户信息</button>

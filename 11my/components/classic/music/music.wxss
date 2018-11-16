@@ -1,0 +1,42 @@
+/* components/classic/music/music.wxss */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.banner{
+    width:500rpx;
+    height:500rpx;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.movie{
+    width:60rpx;
+    height:176rpx;
+    position: relative;
+    top:-210rpx;
+    left:40rpx;
+}
+.music{
+    position: relative;
+    width: 150rpx;
+    height: 150rpx;
+    top: -325rpx;
+    left: 300rpx; 
+}
+.txt{
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 40rpx;
+    margin-top: -100rpx;
+    color: #333;
+}
+.rotate {
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+    0% { transform: rotate(0);}
+    100% { transform: rotate(360deg);}
+}
